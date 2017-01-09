@@ -1,0 +1,17 @@
+<div  class="container">
+  <h2 class="text-center">My Info</h2>
+
+  <!-- <div class="text-center" ng-if="infoCtrl.getUser()">
+    Username: {{ infoCtrl.username}} <br>
+    Email: {{ infoCtrl.email}} <br>
+    Phone: {{ infoCtrl.phone }} <br>
+    Favourite Dish: {{infoCtrl.short_name }}
+  </div> -->
+
+  <info-entry ng-if="infoCtrl.getUser()" user="infoCtrl.user"></info-entry>
+
+  <div class="text-center" ng-if="!infoCtrl.getUser()">
+    <a ui-sref="public.signup">Not Signed up Yet. Sign up now!</a>
+  </div>
+
+</div>
