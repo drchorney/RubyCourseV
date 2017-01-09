@@ -41,7 +41,7 @@ function MenuDataService($q,$http,ApiBasePath) {
 
      response.then(function (response) {
        result = response.data.menu_items;
-       console.log(result)
+      //  console.log(result)
        deferred.resolve(result)
      })
 

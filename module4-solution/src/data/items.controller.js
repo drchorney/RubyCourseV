@@ -8,7 +8,7 @@ ItemsController.$inject = ['items'];
 function ItemsController(items_) {
   var items = this;
   items.items = items_;
-  console.log(items.items)
+  // console.log(items.items)
   //console.log(categories.items)
 }
 
